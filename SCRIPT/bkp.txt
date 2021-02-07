@@ -1,0 +1,10 @@
+<img src="IMG/CA00001/WEB/1.jpg" alt="Banner" class="image">
+
+        <div class="xbody">
+            <div id="slider">
+                <img class="selected image" src="IMG/AP00090/TRATADAS/25.jpg"  class="image" alt="Image1">
+                <img                  src="IMG/AP00090/TRATADAS/26.jpg"  class="image" alt="Image2">
+                <img                  src="IMG/AP00090/TRATADAS/24.jpg"  class="image" alt="Image3">
+                <img                  src="IMG/AP00090/TRATADAS/22.jpg"  class="image" alt="Image4">
+            </div>
+        </div> 

@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css?family=Noto Sans JP");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#contato {
+    color: white;
+    margin: auto;
+    bottom: 0;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    z-index: 10;
+    background-color: #05668D;
+}
+
+header .logo {
+    position: relative;
+    font-size: 1.5em;
+    ;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+header .navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3px 0px;
+}
+
+header .navigation li {
+    list-style: none;
+    margin: 0px 4px;
+}
+
+header .navigation li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header .navigation li a:hover {
+    color: #EDDDD4;
+}
+
+header .search {
+    position: relative;
+    width: 200px;
+    height: 35px;
+}
+
+header .search input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    padding: 0px 10px 0px 35px;
+}
+
+header .search input::placeholder {
+    color: #FFFFFF;
+}
+
+header .search .fa-search {
+    color: #FFFFFF;
+    top: 50%;
+    left: 10px;
+    position: absolute;
+    transform: translateY(-50%);
+    border-right: 1px solid;
+    padding-right: 5px;
+}
+
+.banner {
+    background: #028090;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .content {
+    max-width: 750px;
+    padding: 10px;
+    background: #028090;
+    border-radius: 20px;
+}
+
+.banner .content h2 {
+    font-size: 2.5em;
+    color: #FFFFFF;
+}
+
+.banner .content p {
+    font-size: 1em;
+    color: #FFFFFF;
+    text-align: justify;
+}
+
+.banner .content a {
+    display: inline-block;
+    color: #FFFFFF;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #02899a, #027382);
+    box-shadow: 5px 5px 10px #026673, -5px -5px 10px #0299ad98;
+    transition: all 0.5s ease;
+}
+
+.banner .content a:hover {
+    transform: scale(1.1);
+}
+
+.image {
+    max-width: 90%;
+    border-radius: 12px;
+    background: #028090;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+    color: white;
+}
+
+.image:hover {
+    transform: scale(1.04);
+    border-radius: 20;
+    transition: all 0.5s ease
+}
+
+#main-card {
+    margin-bottom: 50px;
+}
+
+#img_no_border {
+    box-shadow: none;
+    min-width: 60%;
+    display: block;
+    margin: auto;
+}
+
+@media only screen and (min-width: 760px) {
+    body {
+        margin-top: 20px;
+    }
+    header .logo {
+        padding-right: 20px;
+    }
+    .search {
+        visibility: visible;
+    }
+    .banner {
+        padding: 10px;
+        flex-direction: column-reverse;
+        margin-bottom: 30px;
+    }
+    .banner .image {
+        margin-top: 20px;
+        max-width: 100%;
+        flex-direction: column-reverse;
+        border-radius: 10px;
+        margin-left: 0;
+        transition: all 0.5s ease
+    }
+    .image:hover {
+        transform: scale(1.01);
+        border-radius: 20;
+        transition: all 0.5s ease
+    }
+    #main-card {
+        margin-top: 7vh;
+    }
+    .content p {
+        max-width: 650px;
+    }
+    .content h2 {
+        max-width: 650px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    #content_text {
+        padding-top: 0vh;
+    }
+    body {
+        margin-top: 45px;
+    }
+    #imagen_imoveis {
+        max-width: 95%;
+        margin-top: 13vh;
+    }
+    .banner .content {
+        padding-top: 2vh;
+        background: #028090;
+        border-radius: 20px;
+        padding-top: 10vh;
+    }
+    header .logo {
+        padding-right: 0px;
+    }
+    header .search {
+        position: absolute;
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+    header {
+        padding: 0px;
+        flex-direction: column;
+    }
+    .banner {
+        flex-direction: column-reverse;
+    }
+    .banner .image {
+        max-width: 100%;
+        flex-direction: column-reverse;
+        border-radius: 10px;
+        margin-left: 0;
+    }
+    .banner .content h2 {
+        font-size: 1.8em;
+        color: #FFFFFF;
+    }
+    .image:hover {
+        transform: scale(1.01);
+        border-radius: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    header .navigation li a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.3em;
+    }
+    header .logo {
+        position: relative;
+        font-size: 1.9em;
+        ;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    header .navigation li {
+        margin: 0px 15px;
+    }
+    header .logo {
+        padding-right: 0px;
+    }
+    .banner {
+        padding: 10px;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .banner .image {
+        margin-top: 20px;
+        max-width: 60%;
+        flex-direction: column-reverse;
+        border-radius: 10px;
+        margin-left: 0;
+    }
+    .image:hover {
+        transform: scale(1.01);
+        border-radius: 20;
+    }
+    .content p {
+        max-width: 850px;
+    }
+    .content h2 {
+        max-width: 850px;
+    }
+}
+
+@media only screen and (min-width: 1224px) {
+    header .navigation li a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+    header .logo {
+        position: relative;
+        font-size: 2.1em;
+        ;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    header .navigation li {
+        margin: 0px 25px;
+    }
+    header .logo {
+        padding-right: 0px;
+    }
+    .banner {
+        padding: 10px;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .banner .image {
+        margin-top: 20px;
+        max-width: 700px;
+        flex-direction: column-reverse;
+        border-radius: 10px;
+        margin-left: 0;
+    }
+    .image:hover {
+        transform: scale(1.01);
+        border-radius: 20;
+    }
+    .banner .content {
+        max-width: 100%;
+    }
+    .content p {
+        max-width: 850px;
+    }
+    .content h2 {
+        max-width: 850px;
+    }
+}
+
+@media only screen and (min-width: 1424px) {
+    header .navigation li a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.7em;
+    }
+    header .logo {
+        position: relative;
+        font-size: 2.5em;
+        ;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    header .navigation li {
+        margin: 0px 15px;
+    }
+    header .logo {
+        padding-right: 0px;
+    }
+    .banner {
+        padding: 10px;
+        flex-direction: row;
+        align-items: center;
+        padding: 3em;
+        margin-bottom: 15px;
+    }
+    .banner .image {
+        margin-top: 20px;
+        max-width: 1000px;
+        flex-direction: column-reverse;
+        border-radius: 10px;
+        margin-left: 0;
+    }
+    .banner .content h2 {
+        font-size: 3.5em;
+    }
+    .banner .content p {
+        font-size: 1.6em;
+    }
+    .image:hover {
+        transform: scale(1.01);
+        border-radius: 20;
+    }
+}
